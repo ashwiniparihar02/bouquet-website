@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            width: 900px;
+            max-width: 90vh;
+            margin: auto;
+            text-align: center;
+            padding-top: 10px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        header .icon-cart {
+            position: relative;
+        }
+
+        header .icon-cart span {
+            display: flex;
+            width: 25px;
+            height: 25px;
+            background-color: red;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            right: -15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="title">product list</div>
+            <div class="icon-cart">
+                <i class="ri-shopping-basket-line" class="svg"></i><span>0</span>
+            </div>
+        </header>
+        <div class="listproduct">
+            <div class="product">
+                <h1 class="product-h1"></h1>
+                <div class="product-contain"></div>
+            </div>
+        </div>
+    </div>
+    <script src="product.js"></script>
+</body>
+
+</html>
